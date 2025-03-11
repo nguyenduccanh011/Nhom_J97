@@ -23,3 +23,4 @@ app.use("/partical", express.static(__dirname + "/views/partical"));
 const server = app.listen(3000, function () {
   console.log("server is running");
 });
+//123
