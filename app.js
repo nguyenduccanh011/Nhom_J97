@@ -17,6 +17,7 @@ app.use(controller);
 app.set("views", path.join(__dirname, "apps", "views"));
 app.set("view engine", "ejs");
 app.use("/static", express.static(path.join(__dirname, "public")));
+app.use("/admin/static", express.static(path.join(__dirname, "public")));
 app.use("/partical", express.static(__dirname + "/views/partical"));
 
 // ✅ Start the server
