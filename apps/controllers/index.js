@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 // router.use("/product", require(__dirname + "/productcontroller"));
 router.get("/", function (req, res) {
-  res.render("index.ejs");
+  res.render("home.ejs");
 });
 router.use("/api", require(__dirname + "/apicontroller"));
 
