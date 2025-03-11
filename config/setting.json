@@ -1,0 +1,19 @@
+{
+  "isUsingLocalMongodb": true,
+  "mongodb": {
+    "username": "admin",
+    "password": "admin",
+    "database": "lab02"
+  },
+
+  "localMongodb": {
+    "username": "localadmin",
+    "password": "localadmin",
+    "database": "lab02"
+  },
+
+  "url": {
+    "mongodb": "mongodb+srv://[user]:[pass]@lab02.z4mob.mongodb.net/?retryWrites=true&w=majority&appName=Lab02",
+    "localMongodb": "mongodb://[user]:[pass]@localhost:27017/?authSource=Lab02"
+  }
+}

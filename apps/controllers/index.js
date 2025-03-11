@@ -5,5 +5,7 @@ var router = express.Router();
 router.get("/", function (req, res) {
   res.render("index.ejs");
 });
-module.exports = router;
+router.use("/api", require(__dirname + "/apicontroller"));
+
 // router.use("/admin", require(__dirname + "/admin/admincontroller"));
+module.exports = router;
