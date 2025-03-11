@@ -2,7 +2,8 @@ var express = require("express");
 var router = express.Router();
 var User = require("../../model/user");
 router.get("/", function (req, res) {
-  res.json({ message: "this is admin page" });
+//  res.json({ message: "this is admin page" });
+res.render("admin/dashboard");
 });
 router.get("/user", function (req, res) {
   res.render("admin/userManage");
