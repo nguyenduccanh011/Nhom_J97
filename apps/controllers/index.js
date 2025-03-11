@@ -18,6 +18,8 @@ router.get("/", async function (req, res) {
   }
 });
 router.use("/api", require(__dirname + "/apicontroller"));
-
-// router.use("/admin", require(__dirname + "/admin/admincontroller"));
+// router.get("/admin", function (req, res) {
+//   res.render("admin.ejs");
+// });
+router.use("/admin", require(__dirname + "/admin/admincontroller"));
 module.exports = router;
