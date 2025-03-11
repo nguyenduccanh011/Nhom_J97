@@ -1,5 +1,5 @@
 {
-  "isUsingLocalMongodb": true,
+  "isUsingLocalMongodb": false,
   "mongodb": {
     "username": "admin",
     "password": "admin",
