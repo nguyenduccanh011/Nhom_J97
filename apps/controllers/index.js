@@ -5,6 +5,8 @@ router.get("/", function (req, res) {
   res.render("home.ejs");
 });
 router.use("/api", require(__dirname + "/apicontroller"));
-
-// router.use("/admin", require(__dirname + "/admin/admincontroller"));
+// router.get("/admin", function (req, res) {
+//   res.render("admin.ejs");
+// });
+router.use("/admin", require(__dirname + "/admin/admincontroller"));
 module.exports = router;
