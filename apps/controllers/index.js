@@ -7,10 +7,6 @@ var productService = new ProductService();
 router.get("/", async function (req, res) {
   try {
     var productList = await productService.getProductList();
-    for (var i = 0; i < productList.length; i++) {
-      productList[i].Price = productList[i].Price.$numberInt;
-      productList[i].Weight = productList[i].Weight.$numberInt;
-    }
     res.render("homeapi.ejs", { products: productList });
   } catch (e) {
     console.error(err);
