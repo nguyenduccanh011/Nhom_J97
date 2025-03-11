@@ -7,6 +7,9 @@ router.get("/", function (req, res) {
 router.get("/user", function (req, res) {
   res.render("admin/userManage.ejs");
 });
+router.get("/widget", function (req, res) {
+  res.render("admin/widget.ejs");
+});
 module.exports = router;
 // router.get("/getuserlist", function (req, res) {
 //   var userList = new Array();
